@@ -5,15 +5,15 @@ const Weight = (function () {
 
   Constructor.prototype.inGrams = function () {
     this.weight = `${this.weight / 1000} grams`;
-    return this;
+    return this.weight;
   };
   Constructor.prototype.inKg = function () {
     this.weight = `${this.weight / (1000 * 1000)} Kgs`;
-    return this;
+    return this.weight;
   };
   Constructor.prototype.inMg = function () {
     this.weight = `${this.weight} Mgs`;
-    return this;
+    return this.weight;
   };
 
   Constructor.prototype.addMg = function (amount) {
@@ -39,4 +39,4 @@ let hummingbird = new Weight(4000);
 // Add some weight and get the new value in grams
 let afterEating = hummingbird.addMg(150).addGrams(1).inGrams();
 
-console.log(afterEating.weight);
+console.log(afterEating);
