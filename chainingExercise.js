@@ -4,16 +4,13 @@ const Weight = (function () {
   }
 
   Constructor.prototype.inGrams = function () {
-    this.weight = `${this.weight / 1000} grams`;
-    return this.weight;
+    return `${this.weight / 1000} grams`;
   };
   Constructor.prototype.inKg = function () {
-    this.weight = `${this.weight / (1000 * 1000)} Kgs`;
-    return this.weight;
+    return `${this.weight / (1000 * 1000)} Kgs`;
   };
   Constructor.prototype.inMg = function () {
-    this.weight = `${this.weight} Mgs`;
-    return this.weight;
+    return `${this.weight} Mgs`;
   };
 
   Constructor.prototype.addMg = function (amount) {
